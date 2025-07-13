@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Conference 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <canvas id="stars"></canvas>
+
+  <header class="motion">
+    <div class="logo">🚀 TechConf 2025</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero motion">
+    <div class="hero-text flip">
+      <h1>Tech Conference 2025</h1>
+      <p>Innovate. Inspire. Impact.</p>
+      <div id="countdown"></div>
+      <a href="#register" class="btn">Register Now</a>
+    </div>
+  </section>
+
+  <section id="about" class="section motion">
+    <h2>About the Event</h2>
+    <p>Join top tech innovators, entrepreneurs, and thought leaders for a full day of insights, learning, and networking opportunities.</p>
+  </section>
+
+  <section id="speakers" class="section motion">
+    <h2>Meet the Speakers</h2>
+    <div class="speaker-grid">
+      <div class="speaker" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://ganeshnatarajan.in/wp-content/uploads/2021/09/Ganesh-Natarajan-1.jpg" alt="Dr. Ganesh Natarajan" />
+            <h3>Dr. Ganesh Natarajan</h3>
+            <p>Executive Chairman, 5F World</p>
+          </div>
+          <div class="card-back">
+            <p>Dr. Ganesh Natarajan is a renowned tech leader and author, known for driving innovation and mentoring startups across India.</p>
+          </div>
+        </div>
+      </div>
+      <div class="speaker" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://www.legalwiz.in/wp-content/uploads/Shradha-Sharma.png" alt="Shradha Sharma" />
+            <h3>Shradha Sharma</h3>
+            <p>Founder, YourStory</p>
+          </div>
+          <div class="card-back">
+            <p>Shradha Sharma is the Founder and CEO of YourStory, India's leading platform for startup stories and entrepreneurial inspiration.</p>
+          </div>
+        </div>
+      </div>
+      <div class="speaker" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiqijPBx6oJvw4-LwSilCP0u3-f-ba_842-w&s" alt="Varun Mayya" />
+            <h3>Varun Mayya</h3>
+            <p>Co-founder, Avalon Labs</p>
+          </div>
+          <div class="card-back">
+            <p>Varun Mayya is an entrepreneur and author, empowering youth through AI, education, and digital innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="agenda" class="section motion">
+    <h2>Event Agenda</h2>
+    <ul class="agenda-list">
+      <li onclick="toggleAgenda(this)">
+        <strong>09:00 AM:</strong> Opening Keynote by Dr. Ganesh Natarajan
+        <p class="detail">Insights on digital transformation, AI, and the future of leadership in a connected world.</p>
+      </li>
+      <li onclick="toggleAgenda(this)">
+        <strong>10:30 AM:</strong> Building Startup Ecosystems – Shradha Sharma
+        <p class="detail">Empowering entrepreneurs through storytelling and ecosystem design in the Indian market.</p>
+      </li>
+      <li onclick="toggleAgenda(this)">
+        <strong>12:00 PM:</strong> AI & The Creator Economy – Varun Mayya
+        <p class="detail">Exploring AI, freelancing, and how creators can thrive in the digital economy.</p>
+      </li>
+      <li onclick="toggleAgenda(this)">
+        <strong>02:00 PM:</strong> Tech Panel: Future of Work
+        <p class="detail">A moderated panel of industry leaders on remote work, automation, and productivity.</p>
+      </li>
+      <li onclick="toggleAgenda(this)">
+        <strong>03:30 PM:</strong> Product Design & UX Trends
+        <p class="detail">Workshop on user-first design, wireframes, and rapid prototyping tools.</p>
+      </li>
+      <li onclick="toggleAgenda(this)">
+        <strong>05:00 PM:</strong> Innovation Lounge & Networking
+        <p class="detail">Meet tech leaders, creators, and peers to build meaningful connections.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="register" class="section register-section motion">
+    <h2>Register Now</h2>
+    <form id="registration-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <select required>
+        <option value="">Select Ticket Type</option>
+        <option>Standard - Free</option>
+        <option>VIP - $99</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <footer class="motion">
+    <p>© 2025 TechConf. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
